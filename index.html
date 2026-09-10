@@ -1,49 +1,148 @@
 ```html
 <!doctype html>
 <html lang="no">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Min portfolio</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: system-ui, Segoe UI, Arial;
+      font-family: system-ui, Segoe UI, Arial, sans-serif;
       margin: 0;
       min-height: 100vh;
+
+      background: #DABDF0;
+      color: #2B1F38;
 
       display: flex;
       justify-content: center;
       align-items: center;
 
-      text-align: center;
+      padding: 30px;
     }
 
     .innhold {
-      max-width: 720px;
-      padding: 40px;
+      background: white;
+      max-width: 700px;
+      width: 100%;
+
+      padding: 50px;
+      border-radius: 25px;
+
+      text-align: center;
+
+      box-shadow: 0 10px 30px rgba(43, 31, 56, 0.2);
     }
 
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #1B10EB;
+    }
+
+    h1 em {
+      color: #BF6DBD;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #BF6DBD;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 25px;
+    }
+
+    li {
+      background: #DABDF0;
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 12px;
+
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    li:hover {
+      background: #BF6DBD;
+      transform: translateY(-3px);
     }
 
     a {
-      color: #0a7;
+      color: #1B10EB;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    li:hover a {
+      color: white;
     }
 
     code {
-      background: #eef;
-      padding: 2px 6px;
-      border-radius: 6px;
+      display: inline-block;
+      background: #2B1F38;
+      color: #DABDF0;
+
+      padding: 8px 12px;
+      border-radius: 8px;
+
+      margin-top: 10px;
+    }
+
+    .kontakt {
+      margin-top: 35px;
+    }
+
+    .strek {
+      width: 80px;
+      height: 5px;
+
+      background: #BF6DBD;
+
+      border-radius: 10px;
+      margin: 20px auto;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #2B1F38;
+    }
+
+    @media (max-width: 600px) {
+      .innhold {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="innhold">
-    <h1>Hei, jeg heter <em>Karoline</em> 👋</h1>
+  <main class="innhold">
+
+    <h1>
+      Hei, jeg heter <em>Karoline</em> 👋
+    </h1>
+
+    <div class="strek"></div>
 
     <p>
       Dette er min første nettside publisert med
@@ -53,18 +152,34 @@
     <h2>Prosjekter</h2>
 
     <ul>
-      <li>Prosjekt 1 – <a href="#">lenke</a></li>
-      <li>Prosjekt 2 – <a href="#">lenke</a></li>
+      <li>
+        Prosjekt 1 –
+        <a href="#">Se prosjekt</a>
+      </li>
+
+      <li>
+        Prosjekt 2 –
+        <a href="#">Se prosjekt</a>
+      </li>
     </ul>
 
-    <p>
-      Kontakt meg: <code>epost@eksempel.no</code>
-    </p>
-  </div>
+    <div class="kontakt">
+      <h2>Kontakt meg</h2>
+
+      <code>epost@eksempel.no</code>
+    </div>
+
+    <footer>
+      © 2026 Karoline
+    </footer>
+
+  </main>
 
 </body>
+
 </html>
 ```
+
 
 
 
